@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eslint": "^8.33.0",
+    "eslint-plugin-vue": "^9.9.0",
     "@craco/craco": "^7.0.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -59,7 +61,8 @@
     "eject": "react-scripts eject",
     "commit": "git-cz",
     "commitizen:initial": "commitizen init cz-conventional-changelog --save --save-exact",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore -f json"
   },
   "eslintConfig": {
     "extends": [
